@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style infocar.css">    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- fonts     -->    
+    <title>Toda Hora Kids</title>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LX2ML24WH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0LX2ML24WH');
+</script>
+<body>
+  <div id="particles-js"></div> 
+    <header>
+      <div align="center">
+        <img src="img/thk-SF.png">
+       </div>
+    </header>
+    <div class="container">
+      <div class="align-card">
+        <div class="card">
+          <div class="links">
+                    <img class="ft1" src="img/actcarda.png"
+                 <br>
+              <a class="link" href="info.html" href=""><button>← Voltar</button></a>
+              <br>
+          </div><!-- links -->
+          <footer>
+              <div>
+                  <img src="img/hastag.png"><!-- Coloque o caminho das pastas até a sua logo ou sua foto -->
+              </div>
+          </footer>
+          </div>
+    </div>
+  
+</body>
+<!-- BOLHAS -->
+
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 100,
+        density: { enable: true, value_area: 1000 }
+      },
+      color: {
+        value: "#34bac5"
+      },
+      shape: {
+        type: "circle",
+        stroke: { width: 0, color: "#000000" },
+        polygon: { nb_sides: 5 },
+        image: { src: "img/github.svg", width: 100, height: 100 }
+      },
+      opacity: {
+        value: 0.58927153781200905,
+        random: false,
+        anim: { enable: true, speed: 1.2, opacity_min: 0, sync: false }
+      },
+      size: {
+        value: 35,
+        random: true,
+        anim: { enable: true, speed: 25, size_min: 1, sync: false }
+      },
+      line_linked: {
+        enable: false,
+        distance: 150,
+        color: "#0dadb9",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "ballon"
+        },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: { distance: 400, line_linked: { opacity: 1 } },
+        bubble: {
+          distance: 83.91608391608392,
+          size: 1,
+          duration: 3,
+          opacity: 1,
+          speed: 3
+        },
+        repulse: { distance: 200, duration: 0.4 },
+        push: { particles_nb: 4 },
+        remove: {
+          particles_nb: 2
+        }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+<script>
+  const setupButton = document.getElementById("setup-button");
+  const goBackButton = document.getElementById("go-back-button");
+
+  setupButton.addEventListener("click", showContent);
+  goBackButton.addEventListener("click", hideContent);
+
+  function showContent() {
+    document.getElementById("secondary-content").classList.remove("hide");
+    document.getElementById("secondary-content").classList.add("show");
+  }
+
+  function hideContent() {
+    document.getElementById("secondary-content").classList.remove("show");
+    document.getElementById("secondary-content").classList.add("hide");
+  }
+
+</script>
+</html>
